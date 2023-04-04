@@ -16,39 +16,38 @@ contoh program keduanya adalah sebagai berikut:
 
 - fungsional programing:
 
-
-def count_chars(strings):# metode menghitung string
-    return sum(len(s) for s in strings if len(s) > 4)# kondisi pengulangan program
+program menghitung string di dalam list:
     
-strings = ["apple", "banana", "pear", "mango", "kiwi"] # data yang ingin di periksa
-print(count_chars(strings))# menampilkan hasil
+    def count_chars(strings):# metode menghitung string
+        return sum(len(s) for s in strings if len(s) > 4)# kondisi pengulangan program
+    strings = ["apple", "banana", "pear", "mango", "kiwi"] # data yang ingin di periksa
+    print(count_chars(strings))# menampilkan hasil
 
 program ini akan menghitung jumlah karakter yang ada pada string dalam list jika memenuhi kriteria yakni panjang nya harus lebih dari 4 jadi yang dihitung hanya apple, banana dan mango saja. dan output dari program adalah 16.
 
 - oop:
 
-class Calculator:
+program kalkulator menggunakan konsep oop:
 
-    def add(self, x, y): # Metode untuk melakukan penjumlahan
-        return x + y
+    class Calculator:
+        def add(self, x, y): # Metode untuk melakukan penjumlahan
+            return x + y 
     
-    def subtract(self, x, y): # Metode untuk melakukan pengurangan
-        return x - y
+        def subtract(self, x, y): # Metode untuk melakukan pengurangan
+            return x - y
     
-    def multiply(self, x, y): # Metode untuk melakukan perkalian
-        return x * y
+        def multiply(self, x, y): # Metode untuk melakukan perkalian
+            return x * y
     
-    def divide(self, x, y): # Metode untuk melakukan pembagian
-        if y == 0: # Memeriksa apakah pembagi sama dengan 0
-            raise ValueError("Pembagian dengan nol tidak valid") # Jika pembagi 0, raise exception
-        return x / y
-
-calculator = Calculator()# Membuat objek dari kelas Calculator
-
-print("Hasil penjumlahan: ", calculator.add(5, 3)) # Output: Hasil penjumlahan: 8 # Contoh penggunaan kalkulator
-print("Hasil pengurangan: ", calculator.subtract(10, 2)) # Output: Hasil pengurangan: 8 # Contoh penggunaan kalkulator
-print("Hasil perkalian: ", calculator.multiply(6, 7)) # Output: Hasil perkalian: 42 # Contoh penggunaan kalkulator
-print("Hasil pembagian: ", calculator.divide(25, 5)) # Output: Hasil pembagian: 5.0 # Contoh penggunaan kalkulator
+        def divide(self, x, y): # Metode untuk melakukan pembagian
+            if y == 0: # Memeriksa apakah pembagi sama dengan 0
+                raise ValueError("Pembagian dengan nol tidak valid") # Jika pembagi 0, raise exception
+            return x / y
+    calculator = Calculator()# Membuat objek dari kelas Calculator
+    print("Hasil penjumlahan: ", calculator.add(5, 3)) # Output: Hasil penjumlahan: 8 # Contoh penggunaan kalkulator
+    print("Hasil pengurangan: ", calculator.subtract(10, 2)) # Output: Hasil pengurangan: 8 # Contoh penggunaan kalkulator
+    print("Hasil perkalian: ", calculator.multiply(6, 7)) # Output: Hasil perkalian: 42 # Contoh penggunaan kalkulator
+    print("Hasil pembagian: ", calculator.divide(25, 5)) # Output: Hasil pembagian: 5.0 # Contoh penggunaan kalkulator
 
 Program ini memiliki satu kelas yaitu Calculator yang berisi empat metode, yaitu add, subtract, multiply, dan divide. Setiap metode menerima dua argumen yaitu x dan y yang kemudian digunakan untuk melakukan operasi matematika sesuai dengan nama metodenya.
 
