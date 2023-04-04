@@ -16,11 +16,11 @@ contoh program keduanya adalah sebagai berikut:
 
 - fungsional programing:
 
-def count_chars(strings): # metode menghitung string
-    return sum(len(s) for s in strings if len(s) > 4) # kondisi pengulangan
+def count_chars(strings):# metode menghitung string
+    return sum(len(s) for s in strings if len(s) > 4)# kondisi pengulangan program
 
-strings = ["apple", "banana", "pear", "mango", "kiwi"]
-print(count_chars(strings))
+strings = ["apple", "banana", "pear", "mango", "kiwi"] # data yang ingin di periksa
+print(count_chars(strings))# menampilkan hasil
 
 program ini akan menghitung jumlah karakter yang ada pada string dalam list jika memenuhi kriteria yakni panjang nya harus lebih dari 4 jadi yang dihitung hanya apple, banana dan mango saja. dan output dari program adalah 16.
 
